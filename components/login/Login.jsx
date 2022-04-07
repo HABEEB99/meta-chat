@@ -12,9 +12,11 @@ const Login = () => {
   //   });
   // };
   return (
-    <div className="relative bg-body h-screen w-screen flex items-center justify-center">
+    <div className="px-4 md:px-0 relative bg-body h-screen w-screen flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
-        <h1>Welcome to Meta-Chat</h1>
+        <h1 className="text-3xl md:text-4xl mb-4 font-bold text-gray-600">
+          Welcome to Meta-Chat
+        </h1>
         <Image
           className="rounded-lg"
           src="/login-pic.jpg"
@@ -24,7 +26,7 @@ const Login = () => {
         />
         <button
           onClick={authenticate}
-          className="bg-btn text-2xl font-bold text-white p-4 rounded-lg w-full mt-4 hover:bg-cta"
+          className="bg-btn text-2xl font-bold text-white p-4 rounded-lg w-full md:w-[400px] mt-4 hover:bg-cta"
         >
           Login with MetaMask
         </button>

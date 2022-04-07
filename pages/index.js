@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import { useMoralis } from 'react-moralis';
+import Chats from '../components/chats/Chats';
+import Header from '../components/header/Header';
 import Login from '../components/login/Login';
 
 export default function Home() {
@@ -15,7 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <button onClick={logout}>logout</button>
+      <Header />
+      <Chats />
     </div>
   );
 }
